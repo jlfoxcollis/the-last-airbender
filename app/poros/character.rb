@@ -3,7 +3,8 @@ class Character
               :allies,
               :enemies,
               :name,
-              :affiliation
+              :affiliation,
+              :photo
 
   def initialize(data)
     @id = data[:id]
@@ -11,6 +12,7 @@ class Character
     @enemies = data[:enemies]
     @name = data[:name]
     @affiliation = data[:affiliation]
+    @photo = data[:photoUrl]
   end
 
   def has_allies?

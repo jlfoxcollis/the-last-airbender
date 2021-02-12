@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>Recent Photo</th>
     <th>Name </th>
     <th>Allies </th>
     <th>Enemies</th>
@@ -9,6 +10,7 @@
   </tr>
 <% @members.first(25).each do |member| %>
   <tr>
+    <td><img src="<%= member.photo %>" alt="No Image" width="100px"/> </td>
     <td><%= member.name %></td>
     <td><% if member.has_allies? %>
       <% member.allies.each do |ally| %>

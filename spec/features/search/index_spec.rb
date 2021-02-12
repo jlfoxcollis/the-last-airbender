@@ -11,9 +11,13 @@ describe 'it can search the airbender api' do
       expect(page).to have_content("Total Fire Nation Citizens: 97")  
       expect(page.all('tr').count).to eq(26)
       expect(page.all('tr')[0]).to have_content("Name")
+      expect(page.all('tr')[0]).to have_content("Allies")
+      expect(page.all('tr')[0]).to have_content("Enemies")
+      expect(page.all('tr')[0]).to have_content("Affiliations")
       expect(page.all('tr')[1]).to have_content("Afiko")
 
+      expect(page.all('tr')[16].all('td')[2]).to have_content("None")
+      expect(page.all('tr')[16].all('td')[3]).to have_content("None")
     end
-
   end
 end
