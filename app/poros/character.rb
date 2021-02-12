@@ -12,4 +12,12 @@ class Character
     @name = data[:name]
     @affiliation = data[:affiliation]
   end
+
+  def has_allies?
+    @allies.count > 0
+  end
+
+  def has_enemies?
+    @enemies.count > 0
+  end
 end
