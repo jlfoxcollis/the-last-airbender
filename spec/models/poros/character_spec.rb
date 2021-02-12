@@ -14,5 +14,7 @@ describe Character do
     expect(char.name).to eq("Afiko")
     expect(char.allies).to be_an(Array)
     expect(char.affiliation).to eq("Fire Nation")
+    expect(char.has_enemies?).to eq(true)
+    expect(char.has_allies?).to eq(true)
   end
 end
