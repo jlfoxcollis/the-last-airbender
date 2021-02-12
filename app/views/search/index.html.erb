@@ -19,7 +19,7 @@
       <% else %> None <% end %></td>
     <td><% if member.has_enemies?%>
       <% member.enemies.each do |enemy| %>
-        <%= enemy %>
+        <%= enemy %>,
       <% end %>
       <% else %>None <% end %>  
      </td>
