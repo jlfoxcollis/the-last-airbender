@@ -20,6 +20,8 @@ gem 'figaro'
 
 group :development, :test do
   gem 'pry'
+  gem "shoulda-matchers"
+
 end
 
 group :test do
